@@ -2,7 +2,7 @@ import Backbone from 'backbone';
 import _ from 'underscore';
 import {templateFromUrl} from '../utils'
 
-const viewOptions = {
+const options = {
     el: '#root',
 
     initialize: function () {
@@ -31,4 +31,4 @@ const viewOptions = {
     }
 };
 
-export default Backbone.View.extend(viewOptions);
+export default Backbone.View.extend(options);

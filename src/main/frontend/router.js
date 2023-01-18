@@ -4,7 +4,7 @@ import aboutView from './views/about.view';
 import defaultView from './views/default.view';
 
 // Declare our options we'll use to extend the Router
-const routerOptions = {
+const options = {
 
     routes: {
         "about": "aboutRoute",
@@ -17,14 +17,8 @@ const routerOptions = {
 
     defaultRoute: () => {
         new defaultView();
-    },
-
-
-    /*
-    initialize: function () {
-        console.log('router initialize');
-    },*/
+    }
 };
 
 // export our extended Router object
-export default Backbone.Router.extend(routerOptions);
+export default Backbone.Router.extend(options);
